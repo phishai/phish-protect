@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Warning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="page_blocked.js"></script>
+    <script src="page_blocked.js"></script>
+</head>
+<body class="bg-danger">
+
+<div class="container">
+    <div class="row">
+        <div class="col pt-3">
+            <img src="danger.png" class="img-rounded" alt="Cinque Terre">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4 class="pt-3">Malicious Site ahead!</h4>
+            <p>This site use IDN/unicode characters in its domain</p>
+            <p>Attackers might try to trick you and stealing your credentials.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button id="btn_safety" type="button"  class="btn btn-success">Take me to safety</button>
+            <button id="btn_continue" type="button" class="btn btn-dark">Continue anyway</button>
+            <p/>
+            <p><small>Advisory Provided by Phish.AI © Copyright 2018. All Rights Reserved</small></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
