@@ -1,0 +1,35 @@
+html, head, body{
+  margin: 0;
+  height: 100%;
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+#title{
+  font-weight: bold;
+}
+#subtitle{
+  font-weight: bold;
+  margin-top:20px;
+}
+#warning-icon{
+  margin:60px 0 40px 0;
+}
+#buttons{
+  margin: 60px 0;
+}
+#btn_continue{
+  color:#FFFFFF;
+  font-size: 11pt;
+  text-decoration: underline;
+}
+#btn_safety{
+  float:right;
+  background-color:#FF0000;
+  color:#FFFFFF;
+  border-color: #FFFFFF;
+  margin-top:-13px;
+}
+#info{
+  font-size:10pt;
+  padding-top:20px;
+}
