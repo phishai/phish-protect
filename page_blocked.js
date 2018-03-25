@@ -19,10 +19,5 @@ function btn_safety() {
 
 function btn_continue() {
     window.history.go(-1);
-    // var result = getJsonFromUrl();
-    // var link = document.createElement('a');
-    // link.href = result.url;
-    // document.body.appendChild(link);
-    // link.click();
     return false;
 }

@@ -46,7 +46,7 @@ chrome.tabs.onUpdated.addListener(function mylistener(tabId, changedProps, tab) 
         return;
     }
 
-    if (domain.startsWith('xn--')) {
+    if (domain.startsWith('xn--') || domain.startsWith('www.xn--')) {
         chrome.tabs.update(tabId, {url: "page_blocked.html"});
     }
 
