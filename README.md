@@ -9,6 +9,11 @@ https://chrome.google.com/webstore/detail/phishai-idn-protect/mikecfgnmakjomepfc
 ## Contribution
 Any suggestions/pull-requests/bugfixes are welcome.
 
+## Screenshots
+![IDN Website](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot1.png "IDN website")
+![IDN Free Website](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot3.png "IDN Free website")
+![Block Page](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot2.png "Block page")
+
 ## Whishlist & Roadmap
 * Make the block screen nicer
 * Make the popup screen nicer and with a bit more information
