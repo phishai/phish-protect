@@ -4,7 +4,7 @@ Chrome extension to alert and possibly block IDN/Unicode websites mostly to prev
 
 ## Installation
 You can install from chrome webstore:
-https://chrome.google.com/webstore/detail/mikecfgnmakjomepfcghpbhfamjbjhid
+https://chrome.google.com/webstore/detail/phishai-idn-protect/mikecfgnmakjomepfcghpbhfamjbjhid
 
 ## Contribution
 Any suggestions/pull-requests/bugfixes are welcome.
