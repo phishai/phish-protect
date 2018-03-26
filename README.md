@@ -15,7 +15,5 @@ Any suggestions/pull-requests/bugfixes are welcome.
 ![Block Page](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot2.png "Block page")
 
 ## Whishlist & Roadmap
-* Make the popup screen nicer and with a bit more information
-* Add Options screen to support whitelisting domains
-* Add whitelist button to popup screen
-* Support for Edge,Safari,Firefox (we'll decide later if it's going to be in the same repo)  
+The current whishlist and Roadmap are in the [project](https://github.com/phishai/idn-protect-chrome/projects/1) tab.
+Please feel free to put issues as ideas or contact me directly at yp@phish.ai.
