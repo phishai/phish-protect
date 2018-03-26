@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Warning</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="jquery-3.2.1.slim.min.js"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Warning - IDN/Unicode Phish Detected</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="page_blocked.js"></script>
 </head>
-<body class="bg-danger">
+<body id="page-blocked">
+    <div class="container">
 
-<div class="container">
-    <div class="row">
-        <div class="col pt-3">
-            <img src="danger.png" class="img-rounded" alt="Cinque Terre">
+        <div class="row">
+            <div class="col-8 offset-2">
+              <div id="warning-icon">
+                  <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDQ2MS41NSA0NjEuNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ2MS41NSA0NjEuNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0icmVwb3J0Ij4KCQk8cGF0aCBkPSJNMzIzLjg1LDEuMjc1aC0xODguN0wwLDEzNi40MjV2MTkxLjI1bDEzNS4xNSwxMzIuNkgzMjYuNGwxMzUuMTQ5LTEzNS4xNXYtMTg4LjdMMzIzLjg1LDEuMjc1eiBNMjI5LjUsMzY1LjkyNSAgICBjLTE3Ljg1LDAtMzMuMTUtMTUuMzAxLTMzLjE1LTMzLjE1czE1LjMtMzMuMTUsMzMuMTUtMzMuMTVjMTcuODUsMCwzMy4xNSwxNS4zMDEsMzMuMTUsMzMuMTVTMjQ3LjM1LDM2NS45MjUsMjI5LjUsMzY1LjkyNXogICAgIE0yNTUsMjU2LjI3NWgtNTF2LTE1M2g1MVYyNTYuMjc1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+              </div>
+                <h1 id="title">Malicious Site ahead!</h1>
+                <p id="subtitle">This site use IDN/unicode characters in its domain. Attackers might try to trick you and steal your credentials.</p>
+                <div id="buttons">
+                  <a id="btn_continue" href="#">Continue anyway</a>
+                  <button id="btn_safety" type="button" class="btn btn-lg">Take me to safety</button>
+                </div>
+                <p id="info">Advisory provided by Phish.AI © Copyright 2018. All Rights Reserved</p>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <h4 class="pt-3">Malicious Site ahead!</h4>
-            <p>This site use IDN/unicode characters in its domain</p>
-            <p>Attackers might try to trick you and stealing your credentials.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <button id="btn_safety" type="button"  class="btn btn-success">Take me to safety</button>
-            <button id="btn_continue" type="button" class="btn btn-dark">Continue anyway</button>
-            <p/>
-            <p><small>Advisory Provided by Phish.AI © Copyright 2018. All Rights Reserved</small></p>
-        </div>
-    </div>
-</div>
 </body>
 </html>
