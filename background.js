@@ -33,11 +33,14 @@ chrome.tabs.onUpdated.addListener(function mylistener(tabId, changedProps, tab) 
     tabIdMap[tabId] = tab.url;
     var domain = extractHostname(tab.url);
 
-    if (prev_url.endsWith('page_blocked.html') && prev_url.startsWith('chrome-extension://')) {
+
+    if ((prev_url.endsWith('page_blocked.html') || prev_url.endsWith('page_blocked.html#')) &&
+        (prev_url.startsWith('chrome-extension://') ||
+         prev_url.startsWith('moz-extension://'))) {
         if (tabId in tabIgnored) {
             tabIgnored[tabId].push(domain);
         } else {
-            tabIgnored[tabId] = domain;
+            tabIgnored[tabId] = [domain];
         }
         return;
     }
@@ -47,6 +50,9 @@ chrome.tabs.onUpdated.addListener(function mylistener(tabId, changedProps, tab) 
     }
 
     if (domain.startsWith('xn--') || domain.startsWith('www.xn--')) {
+        if (tabId in tabIgnored) {
+            console.log(tabIgnored[tabId].indexOf(domain));
+        }
         chrome.tabs.update(tabId, {url: "page_blocked.html"});
     }
 

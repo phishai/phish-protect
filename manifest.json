@@ -1,6 +1,6 @@
 {
   "name": "Phish.AI IDN Protect",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Small utility to protect against IDN/Unicode websites (homograph attacks)",
   "background": {
     "persistent": false,
