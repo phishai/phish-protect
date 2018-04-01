@@ -14,9 +14,9 @@ Zero Day phishing prevention powered by AI & Computer vision is currently only s
 Any suggestions/pull-requests/bugfixes are welcome.
 
 ## Screenshots
-![IDN Website](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot1.png "IDN website")
-![IDN Free Website](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot3.png "IDN Free website")
-![Block Page](https://github.com/phishai/idn-protect-chrome/blob/master/imgs/screenshot2.png "Block page")
+![IDN Website](https://github.com/phishai/idn-protect-chrome/blob/master/img/screenshot/screenshot1.png "IDN website")
+![IDN Free Website](https://github.com/phishai/idn-protect-chrome/blob/master/img/screenshots/screenshot3.png "IDN Free website")
+![Block Page](https://github.com/phishai/idn-protect-chrome/blob/master/img/screenshots/screenshot2.png "Block page")
 
 ## Privacy Policy
 In the extension you can disable the zero-day phishing and then we don't collect any information.
