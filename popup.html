@@ -1,15 +1,26 @@
 <html>
 <head>
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/libs/firebase.js"></script>
+  <script src="js/libs/firebase-firestore.js"></script>
 </head>
 <body style="width: 400px">
 <div class="card">
-  <div class="card-header bg-primary text-white">Phish.AI IDNProtect<sup>TM</sup></div>
+  <div class="card-header bg-primary text-white">
+    <img src="img/logo.png" height="20" width="122">     Beta</div>
   <div class="card-body">
-    <span class="badge badge-success" id="idn_status"></span>
+    <span class="badge badge-success" id="idn_status">IDN Free</span>
     <span class="badge badge-success" id="domain"></span>
+    <div class="hidden-xs hidden-md hidden-lg"></div>
+    <span class="badge badge-success" id="zero_day">Zero-day Phishing Free</span>
+    <span class="badge badge-success" id="targeted_brand"></span>
+    <div class="hidden-xs hidden-md hidden-lg"></div>
+    <span style="display:none" class="badge badge-danger" id="zero_day_disabled">Zero-day phishing prevention disabled, Please go to <a id="options_page" href="#">options page</a></span>
+    <div class="hidden-xs hidden-md hidden-lg"></div>
+    <span style="display:none" class="badge badge-danger" id="idn_disabled">IDN prevention disabled, Please go to <a id="options_page_1" href="#">options page</a></span>
   </div>
 </div>
-  <script src="popup.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 </html>
+

@@ -1,6 +1,9 @@
-# Phish.AI IDN Protect
+# PhishProtect (Beta)
 ## Summary
-Chrome extension to alert and possibly block IDN/Unicode websites mostly to prevent homograph attacks.
+Chrome extension to alert and possibly block:
+ * IDN/Unicode websites mostly to prevent homograph attacks.
+ * zero-phishing websites powered by AI & Computer Vision
+
 
 ## Installation
 You can install for [chrome](https://chrome.google.com/webstore/detail/phishai-idn-protect/mikecfgnmakjomepfcghpbhfamjbjhid), [firefox](https://addons.mozilla.org/en-US/firefox/addon/phish-ai-idn-protect/?src=search), [opera](https://addons.opera.com/en/extensions/details/phishai-idn-protect/). (Edge coming out soon)

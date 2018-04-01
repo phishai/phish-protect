@@ -1,26 +1,36 @@
 {
-  "name": "Phish.AI IDN Protect",
-  "version": "1.4",
-  "description": "Small utility to protect against IDN/Unicode websites (homograph attacks)",
+  "name": "PhishProtect Beta",
+  "version": "1.5",
+  "description": "PhishProtect provides zero-day phishing prevention powered by AI & Comuter Vision",
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": ["js/libs/firebase.js", "js/libs/firebase-firestore.js", "js/modules/utils.js", "js/background.js"]
   },
   "icons": {
-    "128": "logo128.png"
+    "128": "img/logo128.png"
   },
   "browser_action": {
-    "default_icon": "logo128.png",
+    "default_icon": "img/logo128.png",
     "default_popup": "popup.html",
-    "default_title": "Phish.AI IDN Protect"
+    "default_title": "PhishProtect Beta"
   },
   "options_ui": {
     "page": "options.html",
     "chrome_style": true
   },
   "permissions": [
+    "activeTab",
     "tabs",
-    "storage"
+    "storage",
+    "identity",
+    "identity.email",
+    "<all_urls>"
   ],
-  "manifest_version": 2
+  "author": "Phish.AI",
+  "manifest_version": 2,
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "oauth2": {
+    "client_id": "665859454684.apps.googleusercontent.com",
+    "scopes": []
+  }
 }
