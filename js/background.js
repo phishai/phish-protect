@@ -14,16 +14,25 @@ var tabIdMap = {};
 var tabIgnored = {};
 var tabMalicious = {};
 
+
 chrome.storage.local.get({
     idnEnable: true,
-    aiEnable: false
+    aiEnable: true,
+    userGuid: null
 }, function(items) {
     const idnEnable = items.idnEnable;
     const aiEnable = items.aiEnable;
-    chrome.identity.getProfileUserInfo(function mycallback(userInfo) {
-        const user_email = userInfo.email;
-        addListener(idnEnable, aiEnable, user_email);
-    });
+    var userGuid = items.userGuid;
+    if (items.userGuid == null) {
+        var userGuid = guid();
+        chrome.storage.local.set({
+            userGuid: userGuid
+        }, function(items) {
+            addListener(idnEnable, aiEnable, userGuid);
+        });
+    } else {
+        addListener(idnEnable, aiEnable, userGuid);
+    }
 });
 
 function addListener(idnEnable, aiEnable, user_email) {

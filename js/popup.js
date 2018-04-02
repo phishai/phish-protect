@@ -20,7 +20,7 @@ function open_options_page() {
 function restore_popup() {
     chrome.storage.local.get({
         idnEnable: true,
-        aiEnable: false
+        aiEnable: true
     }, function(items) {
         if (!items.aiEnable) {
             document.getElementById('zero_day_disabled').style.display = ""

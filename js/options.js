@@ -19,7 +19,7 @@ function save_options() {
 function restore_options() {
     chrome.storage.local.get({
         idnEnable: true,
-        aiEnable: false
+        aiEnable: true
     }, function(items) {
         document.getElementById('idn').checked = items.idnEnable;
         document.getElementById('ai').checked = items.aiEnable;
