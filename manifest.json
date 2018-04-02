@@ -1,6 +1,6 @@
 {
   "name": "PhishProtect Beta",
-  "version": "1.6",
+  "version": "1.7",
   "description": "PhishProtect provides zero-day phishing prevention powered by AI & Comuter Vision",
   "background": {
     "persistent": false,
