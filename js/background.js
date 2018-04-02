@@ -67,7 +67,7 @@ function addListener(idnEnable, aiEnable, user_email) {
         }
 
         if (aiEnable) {
-            if (isSystemUrl(tab.url)) {
+            if (isSystemUrl(tab.url) || isPrivateIp(domain)) {
                 return;
             }
             db.collection('whitelist_domains').where('domain', '==', domain)
