@@ -1,7 +1,7 @@
 {
   "name": "PhishProtect Beta",
-  "version": "1.9",
-  "description": "PhishProtect provides zero-day phishing prevention powered by AI & Comuter Vision",
+  "version": "1.10",
+  "description": "PhishProtect provides zero-day phishing prevention powered by AI & Computer Vision",
   "background": {
     "persistent": false,
     "scripts": ["js/libs/firebase.js", "js/libs/firebase-firestore.js", "js/modules/utils.js", "js/background.js"]

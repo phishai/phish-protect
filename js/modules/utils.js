@@ -7,7 +7,8 @@ function isPrivateIp(ip) {
         /^10\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$/.test(ip) ||
         /^169\.254\.([0-9]{1,3})\.([0-9]{1,3})$/.test(ip) ||
         /^localhost$/.test(ip) ||
-        /^$/.test(ip)
+        /^$/.test(ip) ||
+        /^about:blank$/.test(ip)
     )
 }
 
