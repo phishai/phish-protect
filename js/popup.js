@@ -17,6 +17,10 @@ function open_options_page() {
     chrome.tabs.create({'url': "/options.html" } )
 };
 
+function open_demo_page() {
+    chrome.tabs.create({'url': "https://www.phish.ai/request-a-demo" } )
+};
+
 function restore_popup() {
     chrome.storage.local.get({
         idnEnable: true,
@@ -65,3 +69,5 @@ document.getElementById('options_page').addEventListener('click',
     open_options_page);
 document.getElementById('options_page_1').addEventListener('click',
     open_options_page);
+document.getElementById('enterprise').addEventListener('click',
+    open_demo_page);

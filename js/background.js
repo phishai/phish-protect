@@ -14,28 +14,29 @@ var tabIdMap = {};
 var tabIgnored = {};
 var tabMalicious = {};
 
-
 chrome.storage.local.get({
     idnEnable: true,
     aiEnable: true,
-    userGuid: null
+    userGuid: null,
+    productKey: '',
 }, function(items) {
     const idnEnable = items.idnEnable;
     const aiEnable = items.aiEnable;
     var userGuid = items.userGuid;
+    var productKey = items.productKey;
     if (items.userGuid == null) {
         var userGuid = guid();
         chrome.storage.local.set({
             userGuid: userGuid
         }, function(items) {
-            addListener(idnEnable, aiEnable, userGuid);
+            addListener(idnEnable, aiEnable, userGuid, productKey);
         });
     } else {
-        addListener(idnEnable, aiEnable, userGuid);
+        addListener(idnEnable, aiEnable, userGuid, productKey);
     }
 });
 
-function addListener(idnEnable, aiEnable, user_email) {
+function addListener(idnEnable, aiEnable, user_email, productKey) {
     chrome.tabs.onUpdated.addListener(function mylistener(tabId, changedProps, tab) {
         if (changedProps.status != "complete") {
             return;
@@ -86,6 +87,9 @@ function addListener(idnEnable, aiEnable, user_email) {
                             FD.append('user_email', user_email);
 
                             xhr.open("POST", "https://api.phish.ai/url/check");
+                            if (productKey != '') {
+                                xhr.setRequestHeader("Authorization", "Bearer " + productKey);
+                            }
                             xhr.onreadystatechange = function() { //Call a function when the state changes.
                                 if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                                     res = JSON.parse(xhr.responseText);
