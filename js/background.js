@@ -76,6 +76,11 @@ function addListener(idnEnable, aiEnable, user_email, productKey) {
                 .then(function(querySnapshot) {
                     if (querySnapshot.empty) {
                         chrome.tabs.captureVisibleTab(function(screenshotUrl) {
+                            if (screenshotUrl === undefined) {
+                                console.log('error: unable to take screenshot');
+                                return;
+                            }
+
                             var xhr = new XMLHttpRequest();
                             var FD = new FormData();
 
@@ -101,7 +106,6 @@ function addListener(idnEnable, aiEnable, user_email, productKey) {
                                     console.log(xhr.responseText)
                                 }
                             };
-
 
                             xhr.send(FD);
 
