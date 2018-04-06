@@ -1,6 +1,6 @@
 {
   "name": "PhishProtect Beta",
-  "version": "1.10",
+  "version": "1.11",
   "description": "PhishProtect provides zero-day phishing prevention powered by AI & Computer Vision",
   "background": {
     "persistent": false,
