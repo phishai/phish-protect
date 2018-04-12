@@ -3,6 +3,8 @@
 Chrome extension to alert and possibly block:
  * IDN/Unicode websites mostly to prevent homograph attacks.
  * Zero-phishing websites powered by AI & Computer Vision
+ 
+An API is also available on [https://app.phish.ai](https://app.phish.ai)
 
 
 ## Installation
